@@ -1,39 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-function App() {
-  const [data, setData] = React.useState(null)
+function Main() {
+  const [data, setData] = useState(null)
 
   async function updateQuote() {
-    try {
-      const response = await fetch('https://api.quotable.io/random')
-      const { statusCode, statusMessage, ...data } = await response.json()
-      if (!response.ok) throw new Error(`${statusCode} ${statusMessage}`)
-      setData(data)
-    } catch (error) {
-      setData({ content: 'Opps... Something went wrong' })
-    }
+    const response = await fetch('https://api.quotable.io/random')
+    setData(await response.json())
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     updateQuote()
   }, [])
 
   if (!data) return null
 
   return (
-    <div className="App">
-      <blockquote className="blockquote mb-0">
+    <>
+      <blockquote>
         <p>{data.content}</p>
-        {data.author && (
-          <footer className="blockquote-footer">
-            <cite title="Source Title">{data.author}</cite>
-          </footer>
-        )}
+        <cite> - {data.author}</cite>
       </blockquote>
+
       <button variant="primary" onClick={updateQuote}>
         New Quote
       </button>
-    </div>
+    </>
   )
 }
-export default App
+export default Main
