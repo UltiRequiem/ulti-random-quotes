@@ -2,8 +2,11 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: teal;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
 `
 

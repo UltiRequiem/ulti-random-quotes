@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Quote, Footer } from '../components'
+import { Card } from '../containers/main'
 
 const Main = () => {
   const [data, setData] = useState(null)
@@ -18,12 +18,7 @@ const Main = () => {
 
   return (
     <>
-      <Quote content={data.content} author={data.author} />
-
-      <button variant="primary" onClick={updateQuote}>
-        New Quote
-      </button>
-      <Footer text="UltiRequiem © 2021" />
+      <Card content={data.content} author={data.author} update={updateQuote} />
     </>
   )
 }
