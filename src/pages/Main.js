@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import { Quote, Footer } from '../components'
+
 const Main = () => {
   const [data, setData] = useState(null)
 
@@ -16,17 +18,14 @@ const Main = () => {
 
   return (
     <>
-      <blockquote>
-        <p>{data.content}</p>
-        <cite> - {data.author}</cite>
-      </blockquote>
+      <Quote content={data.content} author={data.author} />
 
       <button variant="primary" onClick={updateQuote}>
         New Quote
       </button>
+      <Footer text="UltiRequiem © 2021" />
     </>
   )
 }
-
 
 export default Main
