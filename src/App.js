@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-function Main() {
+const Quote = () => {
   const [data, setData] = useState(null)
 
   async function updateQuote() {
@@ -27,4 +27,11 @@ function Main() {
     </>
   )
 }
-export default Main
+
+const Footer = () => (
+  <footer>
+    <p>UltiRequiem</p>
+  </footer>
+)
+
+export { Quote,Footer }
