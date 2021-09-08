@@ -1,11 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Button = ({ text, onClick }) => (
-  <p>
+  <p style={{ textAlign: 'center' }}>
     <button type="button" variant="primary" onClick={onClick}>
       {text}
     </button>
   </p>
 )
+
+Button.propTypes = {
+  text: PropTypes.string,
+  onClick: PropTypes.func
+}
 
 export default Button

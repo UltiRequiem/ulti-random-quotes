@@ -3,25 +3,21 @@ import PropTypes from 'prop-types'
 
 import { Figure, Blockquote, Figcaption } from './styles'
 
-const Quote = ({ content, author, authorSlug }) => (
+const Quote = ({ content, author }) => (
   <Figure>
     <Blockquote>
-      <p>{content}</p>
+      <p style={{color: 'white'}}>{content}</p>
     </Blockquote>
 
     <Figcaption>
-      &mdash;
-      <cite>
-        {authorSlug} {author}
-      </cite>
+      &mdash; <cite>{author}</cite>
     </Figcaption>
   </Figure>
 )
 
 Quote.propTypes = {
   content: PropTypes.string,
-  author: PropTypes.string,
-  authorSlug: PropTypes.string
+  author: PropTypes.string
 }
 
 export default Quote

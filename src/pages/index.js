@@ -1,3 +1,4 @@
 import Main from './Main'
 
-export {Main}
+// eslint-disable-next-line import/prefer-default-export
+export { Main }
