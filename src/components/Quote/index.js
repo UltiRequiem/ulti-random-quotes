@@ -1,23 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Figure, Blockquote, Figcaption } from './styles'
+import { Figure, Blockquote, Quote, Figcaption } from './styles'
 
-const Quote = ({ content, author }) => (
+const ComponentQuote = ({ content, author }) => (
   <Figure>
     <Blockquote>
-      <p style={{color: 'white'}}>{content}</p>
+      <Quote>{content}</Quote>
+      <Figcaption>
+        &mdash; <cite>{author}</cite>
+      </Figcaption>
     </Blockquote>
-
-    <Figcaption>
-      &mdash; <cite>{author}</cite>
-    </Figcaption>
   </Figure>
 )
 
-Quote.propTypes = {
+ComponentQuote.propTypes = {
   content: PropTypes.string,
   author: PropTypes.string
 }
 
-export default Quote
+export default ComponentQuote

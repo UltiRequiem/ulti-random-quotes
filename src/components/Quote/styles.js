@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
-const Blockquote = styled.blockquote`
+const Quote = styled.blockquote`
+  font-size: 15;
+`
+
+const Blockquote = styled.div`
   padding: 20px;
   margin: 1em;
-  background: #ccc;
-  border-radius: 10px;
-  margin-top:35%;
+  margin-top: 35%;
+  border: 2px solid black;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px
 `
 
 const Figure = styled.figure`
@@ -20,4 +25,4 @@ const Figcaption = styled.figcaption`
   margin: 1em;
 `
 
-export { Blockquote, Figure, Figcaption }
+export { Quote, Blockquote, Figure, Figcaption }
