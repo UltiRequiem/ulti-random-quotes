@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledFooter, Text } from './styles'
+import StyledFooter from './styles'
 
 const Footer = ({ text }) => (
   <StyledFooter>
-    <Text>{text}</Text>
+    <p>{text}</p>
   </StyledFooter>
 )
 

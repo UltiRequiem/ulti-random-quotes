@@ -18,7 +18,12 @@ const Main = () => {
 
   return (
     <>
-      <Card content={data.content} author={data.author} update={updateQuote} />
+      <Card
+        content={data.content}
+        author={data.author}
+        authorSlug={data.authorSlug}
+        update={updateQuote}
+      />
     </>
   )
 }

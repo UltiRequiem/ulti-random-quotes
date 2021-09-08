@@ -1,15 +1,11 @@
 import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  background-color: #45a1ff;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #42A5F5;
+  color: white;
+  padding: 20px;
 `
 
-const Text = styled.p`
-  text-align: 'center';
-  color: darkblue;
-`
-
-export { StyledFooter, Text }
+export default StyledFooter
