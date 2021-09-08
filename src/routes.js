@@ -1,14 +1,7 @@
 import React from 'react'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Quote, Footer } from './App'
-
-const Main = () => (
-  <>
-    <Quote />
-    <Footer />
-  </>
-)
+import { Main } from './pages'
 
 const App = () => (
   <Router>
