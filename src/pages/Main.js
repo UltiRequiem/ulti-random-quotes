@@ -1,32 +1,24 @@
-
 import React, { useState, useEffect } from 'react'
-
 import { Card } from '../containers/main'
 
-const Main = () => {
-  const [data, setData] = useState(null)
+export default function Main() {
+  const [data, setData] = useState()
 
-  async function updateQuote() {
+  const updateQuote = async () => {
     const response = await fetch('https://api.quotable.io/random')
     setData(await response.json())
   }
 
-  useEffect(() => {
-    updateQuote()
-  }, [])
+  useEffect(updateQuote, [])
 
-  if (!data) return null
+  if (!data) return <p>Loading...</p>
 
   return (
-    <>
-      <Card
-        content={data.content}
-        author={data.author}
-        authorSlug={data.authorSlug}
-        update={updateQuote}
-      />
-    </>
+    <Card
+      content={data.content}
+      author={data.author}
+      authorSlug={data.authorSlug}
+      update={updateQuote}
+    />
   )
 }
-
-export default Main

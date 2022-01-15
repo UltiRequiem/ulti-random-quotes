@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "start": "npx webpack serve --config webpack.config.dev.js",
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "prop-types": "^15.7.2",

@@ -9,8 +9,8 @@ const Blockquote = styled.div`
   margin: 1em;
   margin-top: 35%;
   border: 2px solid black;
-  border-top-left-radius:10px;
-  border-top-right-radius:10px
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 `
 
 const Figure = styled.figure`

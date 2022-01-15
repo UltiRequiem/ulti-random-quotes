@@ -1,5 +1,3 @@
-import Footer from './Footer'
-import Quote from './Quote'
-import Button from './Button'
-
-export { Footer, Quote,Button }
+export { default as Footer } from './Footer'
+export { default as Quote } from './Quote'
+export { default as Button } from './Button'

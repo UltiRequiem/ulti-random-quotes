@@ -1,5 +1,4 @@
-const path = require('path')
-
+const path = require('node:path')
 const Dotenv = require('dotenv-webpack')
 const HtmlPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
