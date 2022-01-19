@@ -8,6 +8,7 @@
 ### Related Projects
 
 - [UltiRequiem/Quotable](https://github.com/UltiRequiem/quotable): CLI Application and API Wrapper written in Go
+- [UltiRequiem/ruquotes](https://github.com/UltiRequiem/ruquotes): CLI Application written in Rust
 - [UltiRequiem/quoteran](https://github.com/UltiRequiem/quoteran): CLI Application written in Python
 - [UltiRequiem/ranmess](https://github.com/UltiRequiem/ranmess): CLI Application written in Javascript using Node.js
 

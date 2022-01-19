@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Figure, Blockquote, Quote, Figcaption } from './styles'
+import { Figure, Blockquote } from './styles'
 
 const ComponentQuote = ({ content, author }) => (
   <Figure>
     <Blockquote>
-      <Quote>{content}</Quote>
-      <Figcaption>
+      <blockquote>&quot;{content}&quot;</blockquote>
+      <figcaption>
         &mdash; <cite>{author}</cite>
-      </Figcaption>
+      </figcaption>
     </Blockquote>
   </Figure>
 )
