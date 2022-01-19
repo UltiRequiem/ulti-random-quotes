@@ -10,7 +10,6 @@ const fm = (dir) => path.join(__dirname, dir)
 
 module.exports = {
   entry: './src/index.js',
-
   output: {
     path: fm('dist'),
     filename: '[name].[contenthash].js'
@@ -24,7 +23,8 @@ module.exports = {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
       '@utils': fm('src/utils'),
-      '@pages': fm('src/pages')
+      '@pages': fm('src/pages'),
+      classnames: 'clsx'
     }
   },
 
@@ -66,8 +66,7 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin(), new HtmlMinimizerPlugin()],
     splitChunks: {
-      chunks: 'all',
-      minSize: 1000 * 600
+      chunks: 'all'
     }
   }
 }

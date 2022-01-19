@@ -3,5 +3,14 @@ module.exports = {
   plugins: [
     ['babel-plugin-styled-components'],
     ['@babel/plugin-transform-runtime', { regenerator: true }]
-  ]
+  ],
+
+  env: {
+    production: {
+      plugins: [
+        'transform-react-remove-prop-types',
+        ['styled-components', { displayName: false }]
+      ]
+    }
+  }
 }
