@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Button = ({ text, onClick }) => (
-  <p style={{ textAlign: 'center' }}>
+  <div style={{ textAlign: 'center' }}>
     <button type="button" variant="primary" onClick={onClick}>
       {text}
     </button>
-  </p>
+  </div>
 )
 
 Button.propTypes = {
