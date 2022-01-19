@@ -1,16 +1,9 @@
 module.exports = {
   presets: ['@babel/preset-env', '@babel/preset-react'],
-  plugins: [
-    ['babel-plugin-styled-components'],
-    ['@babel/plugin-transform-runtime', { regenerator: true }]
-  ],
-
+  plugins: [['@babel/plugin-transform-runtime', { regenerator: true }]],
   env: {
     production: {
-      plugins: [
-        'transform-react-remove-prop-types',
-        ['styled-components', { displayName: false }]
-      ]
+      plugins: ['transform-react-remove-prop-types']
     }
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react'
+import './App.css'
 
 const Quote = React.lazy(() => import('./components/Quote'))
 const Button = React.lazy(() => import('./components/button'))
@@ -18,11 +19,11 @@ export default function Main() {
   if (!data) return <p>Getting data...</p>
 
   return (
-    <>
+    <div className="container">
       <Suspense fallback={<p>Loading page...</p>}>
         <Quote content={data.content} author={data.author} />
         <Button text="Update Quote" onClick={updateQuote} />
       </Suspense>
-    </>
+    </div>
   )
 }

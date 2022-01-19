@@ -1,17 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import { Figure, Blockquote } from './styles'
+import './styles.css'
 
 const ComponentQuote = ({ content, author }) => (
-  <Figure>
-    <Blockquote>
+  <figure>
+    <div className="quote_container">
       <blockquote>&quot;{content}&quot;</blockquote>
       <figcaption>
         &mdash; <cite>{author}</cite>
       </figcaption>
-    </Blockquote>
-  </Figure>
+    </div>
+  </figure>
 )
 
 ComponentQuote.propTypes = {

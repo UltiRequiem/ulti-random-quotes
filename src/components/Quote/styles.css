@@ -1,0 +1,17 @@
+figure {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure .quote_container {
+  padding: 10%;
+  min-height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  figure .quote_container {
+    min-height: 500px;
+  }
+}
