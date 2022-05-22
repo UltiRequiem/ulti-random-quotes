@@ -1,16 +1,26 @@
 # Ulti Random Quotes
 
-[![GitMoji](https://img.shields.io/badge/Gitmoji-%F0%9F%8E%A8%20-FFDD67.svg)](https://gitmoji.dev)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/ulti-random-quotes?color=blue&label=Total%20Lines)
+TODO: RE DO
+
+## Support
+
+Open an Issue, I will check it a soon as possible 👀
+
+If you want to hurry me up a bit
+[send me a tweet](https://twitter.com/UltiRequiem) 😆
+
+Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you
+like my work 🙏
+
+Don't forget to start the repo ⭐
 
 ### Related Projects
 
-- [UltiRequiem/Quotable](https://github.com/UltiRequiem/quotable): CLI Application and API Wrapper written in Go
-- [UltiRequiem/ruquotes](https://github.com/UltiRequiem/ruquotes): CLI Application written in Rust
-- [UltiRequiem/quoteran](https://github.com/UltiRequiem/quoteran): CLI Application written in Python
-- [UltiRequiem/ranmess](https://github.com/UltiRequiem/ranmess): CLI Application written in Javascript using Node.js
+- [UltiRequiem/Quotable](https://github.com/UltiRequiem/quotable): CLI and API Wrapper written for Go
+- [UltiRequiem/ruquotes](https://github.com/UltiRequiem/ruquotes): CLI in Rust
+- [UltiRequiem/quoteran](https://github.com/UltiRequiem/quoteran): CLI in Python
+- [UltiRequiem/ranmess](https://github.com/UltiRequiem/ranmess): CLI and API Wrapper for JavaScript
 
-### License
+## Licence
 
-This project is licensed under the [MIT License](./LICENSE.md).
+MIT License 📄
